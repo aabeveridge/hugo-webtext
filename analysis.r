@@ -23,7 +23,7 @@ df$region <- tolower(df$region)
 
 # Map country level choropleth of participant data
 png("~/hugo-webtext/images/country-map.png", 750, 600)
-country_choropleth(df, title="", legend="", num_colors=7, zoom=NULL)
+country_choropleth(df, title="", legend="", num_colors=1, zoom=NULL)
 dev.off()
 
 # Use country.regions to map countries
