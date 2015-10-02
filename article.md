@@ -6,4 +6,5 @@ This article investigates the public discourse surrounding the 2015 Hugo Awards.
 ##
 ![](./images/country-bar.png)
 
+![](./images/country-map.png)
 
