@@ -75,3 +75,13 @@ png("~/hugo-webtext/images/vote-bar.png", 750, 200)
   axis(1, at=seq(0, 220, 10))
 dev.off()
 
+############################################################################
+# Barplot of "Did the Participant Agree with Sad Puppies and Slate Voting?"
+############################################################################
+
+png("~/hugo-webtext/images/puppies-bar.png", 750, 250)
+  par(mar=c(4, 6, 4, 1), pin=c(5.5, 1.5))
+  barplot(table(d$sp.continued), main="Participant's Opinion about Sad Puppies and Slate Voting?", 
+          las=2, horiz=TRUE, axes=FALSE, width=6, space=0.2, ylim=c(0, 50))
+  axis(1, at=seq(0, 220, 10))
+dev.off()
