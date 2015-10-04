@@ -64,5 +64,14 @@ png("~/hugo-webtext/images/hear-bar.png", 750, 600)
   axis(1, at=seq(0, 220, 10))
 dev.off()
 
+########################################################
+# Barplot of "Did the Participant Vote for the Hugos?"
+########################################################
 
+png("~/hugo-webtext/images/vote-bar.png", 750, 200)
+  par(mar=c(4, 6, 4, 1), pin=c(5.5, 1.5))
+  barplot(table(d$vote), main="Did the Participant Vote for the Hugos?", las=2, horiz=TRUE, axes=FALSE, 
+          width=6, space=0.2, ylim=c(0, 50))
+  axis(1, at=seq(0, 220, 10))
+dev.off()
 
